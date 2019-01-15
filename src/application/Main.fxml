@@ -6,10 +6,15 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 <BorderPane onKeyTyped="#keyDown" prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
-   <center>
-      <Label fx:id="result" text="???" BorderPane.alignment="CENTER" />
-   </center>
    <bottom>
-      <Button mnemonicParsing="true" onAction="#next" text="_kolejny" BorderPane.alignment="CENTER" />
+      <ToolBar>
+         <items>
+            <Button mnemonicParsing="true" onAction="#next" text="_p kolejny" BorderPane.alignment="CENTER" />
+            <Button onAction="#exit" text="_w wyjdź" />
+         </items>
+      </ToolBar>
    </bottom>
+   <center>
+      <TextArea fx:id="result" editable="false" prefHeight="200.0" prefWidth="200.0" text="Aplikacja została uruchomiona. Od teraz będzie działała w tle. Aby dokonać osądu czy na ekranie telewizora(podpiętego do komputera) jest kot, proszę nacisnąć przycisk p. Aby wyłączyć aplikację, proszę nacisnąć przycisk w.&#10;Próba uruchomienia aplikacji, gdy na ekranie nie znajduje się zdjęcie powodujące konflikt, może spowodować nieprawidłowe wyniki." wrapText="true" BorderPane.alignment="CENTER" />
+   </center>
 </BorderPane>
