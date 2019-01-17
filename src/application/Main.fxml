@@ -9,13 +9,13 @@
    <bottom>
       <ToolBar prefHeight="15.0" prefWidth="185.0">
          <items>
-            <Button mnemonicParsing="true" onAction="#next" text="P &quot;Kolejna runda&quot;" BorderPane.alignment="CENTER" />
-            <Button onAction="#exit" text="W &quot; Koniec Gry" />
+            <Button mnemonicParsing="true" onAction="#next" text="_P &quot;Kolejna runda&quot;" BorderPane.alignment="CENTER" />
+            <Button onAction="#exit" text="_W &quot; Koniec Gry" />
          </items>
       </ToolBar>
    </bottom>
    <center>
-      <TextArea fx:id="result" editable="false" prefHeight="147.0" prefWidth="421.0" text="Aplikacja została uruchomiona. Od teraz będzie działała w tle. Aby dokonać osądu czy na ekranie telewizora(podpiętego do komputera) jest kot, proszę nacisnąć przycisk p. Aby wyłączyć aplikację, proszę nacisnąć przycisk w.&#10;Próba uruchomienia aplikacji, gdy na ekranie nie znajduje się zdjęcie powodujące konflikt, może spowodować nieprawidłowe wyniki." wrapText="true" BorderPane.alignment="CENTER" />
+      <TextArea fx:id="result" editable="false" prefHeight="147.0" prefWidth="421.0" text="Aplikacja zostaĹ‚a uruchomiona. Od teraz bÄ™dzie dziaĹ‚aĹ‚a w tle. Aby dokonaÄ‡ osÄ…du czy na ekranie telewizora(podpiÄ™tego do komputera) jest kot, proszÄ™ nacisnÄ…Ä‡ przycisk p. Aby wyĹ‚Ä…czyÄ‡ aplikacjÄ™, proszÄ™ nacisnÄ…Ä‡ przycisk w.&#10;PrĂłba uruchomienia aplikacji, gdy na ekranie nie znajduje siÄ™ zdjÄ™cie powodujÄ…ce konflikt, moĹĽe spowodowaÄ‡ nieprawidĹ‚owe wyniki." wrapText="true" BorderPane.alignment="CENTER" />
    </center>
    <top>
       <ImageView fitHeight="260.0" fitWidth="596.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
