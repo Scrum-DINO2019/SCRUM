@@ -1,8 +1,4 @@
 package application;
-	
-import java.io.File;
-
-import com.sun.java_cup.internal.runtime.Scanner;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -18,20 +14,20 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			
+
 			Parent root1 = FXMLLoader.load(getClass().getResource("Main.fxml"));
 			Scene scene = new Scene(root1,600,400);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
-			Image anotherIcon = new Image("file:/Scrum/res/cat.png");
+			Image anotherIcon = new Image("file:/SCRUM/src/application/cat.png");
 			primaryStage.getIcons().add(anotherIcon);
-			primaryStage.setTitle("CatRecognizer");
+			primaryStage.setTitle("CatRecognizer ");
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public static void main(String[] args) {
 		launch(args);
 	}
