@@ -1,5 +1,9 @@
 package application;
 	
+import java.io.File;
+
+import com.sun.java_cup.internal.runtime.Scanner;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
@@ -20,9 +24,9 @@ public class Main extends Application {
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
-			Image anotherIcon = new Image("file:///C:/Users/barry/Downloads/SCRUM-master/Zdjecia/cat.png");
+			Image anotherIcon = new Image("file:/Scrum/res/cat.png");
 			primaryStage.getIcons().add(anotherIcon);
-			primaryStage.setTitle("CatRecognizer ");
+			primaryStage.setTitle("CatRecognizer");
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
