@@ -12,6 +12,8 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
+import javafx.scene.image.ImageView;
+import javafx.scene.image.ImageViewBuilder;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 
@@ -26,6 +28,8 @@ public class MainController {
     @FXML // fx:id="result"
     private TextArea result; // Value injected by FXMLLoader
 
+    private ImageView image;
+    
     @FXML
     void keyDown(KeyEvent event) {
     	System.out.println(event.getCode()+" "+event.getCharacter());
