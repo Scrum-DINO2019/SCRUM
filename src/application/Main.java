@@ -20,7 +20,7 @@ public class Main extends Application {
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
-			Image anotherIcon = new Image("file:///C:/Users/barry/Downloads/SCRUM-master/src/application/cat.png");
+			Image anotherIcon = new Image("file:///C:/Users/barry/Downloads/SCRUM-master/Zdjecia/cat.png");
 			primaryStage.getIcons().add(anotherIcon);
 			primaryStage.setTitle("CatRecognizer ");
 		} catch(Exception e) {

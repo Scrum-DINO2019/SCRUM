@@ -18,9 +18,9 @@
       <TextArea fx:id="result" editable="false" prefHeight="147.0" prefWidth="421.0" text="Aplikacja została uruchomiona. Od teraz będzie działała w tle. Aby dokonać osądu czy na ekranie telewizora(podpiętego do komputera) jest kot, proszę nacisnąć przycisk p. Aby wyłączyć aplikację, proszę nacisnąć przycisk w.&#10;Próba uruchomienia aplikacji, gdy na ekranie nie znajduje się zdjęcie powodujące konflikt, może spowodować nieprawidłowe wyniki." wrapText="true" BorderPane.alignment="CENTER" />
    </center>
    <top>
-      <ImageView fitHeight="252.0" fitWidth="596.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+      <ImageView fitHeight="260.0" fitWidth="596.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
          <image>
-            <Image url="file:///C:/Users/barry/Downloads/SCRUM-master/src/application/Tecza%20(1).jpg" />
+            <Image url="file:///C:/Users/barry/Downloads/SCRUM-master/Zdjecia/Tecza%20(1).jpg" />
          </image>
       </ImageView>
    </top>
