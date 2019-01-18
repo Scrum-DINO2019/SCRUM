@@ -21,7 +21,7 @@ Próba uruchomienia aplikacji, gdy na ekranie nie znajduje się zdjęcie powoduj
    <top>
       <ImageView fitHeight="260.0" fitWidth="596.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
          <image>
-            <Image url="file://Scrum/res/Rainbow.jpg" />
+            <Image url="file:res/Rainbow.jpg" />
          </image>
       </ImageView>
    </top>

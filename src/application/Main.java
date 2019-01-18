@@ -1,5 +1,8 @@
 package application;
 
+import java.io.File;
+import java.io.FileInputStream;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
@@ -20,7 +23,11 @@ public class Main extends Application {
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
-			Image anotherIcon = new Image("file:/SCRUM/src/application/cat.png");
+			File f = new File("res/cat.png");
+			if(!f.exists()) {
+				System.err.println("lol");
+			}
+			Image anotherIcon = new Image(new FileInputStream(f));
 			primaryStage.getIcons().add(anotherIcon);
 			primaryStage.setTitle("CatRecognizer ");
 		} catch(Exception e) {
