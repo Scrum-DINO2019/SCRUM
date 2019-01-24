@@ -11,6 +11,8 @@
          <items>
             <Button mnemonicParsing="true" onAction="#next" text="_P &quot;Kolejna runda&quot;" BorderPane.alignment="CENTER" />
             <Button onAction="#exit" text="_W &quot; Koniec Gry" />
+            <Button mnemonicParsing="true" onAction="#gospodarze_point" text="_G &quot;Punkt dla Gospodarzy&quot;" BorderPane.alignment="CENTER" />
+            <Button mnemonicParsing="true" onAction="#goscie_point" text="_H &quot;Punkt dla Gości&quot;" BorderPane.alignment="CENTER" />
          </items>
       </ToolBar>
    </bottom>
@@ -25,4 +27,7 @@ Próba uruchomienia aplikacji, gdy na ekranie nie znajduje się zdjęcie powoduj
          </image>
       </ImageView>
    </top>
+   <left>
+      <TextArea fx:id="score" editable="false" prefHeight="15.0" prefWidth="150.0" text="Gospodarze 0:0 Goście" wrapText="true" BorderPane.alignment="CENTER" />
+	</left>
 </BorderPane>
