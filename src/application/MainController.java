@@ -18,6 +18,7 @@ public class MainController {
 	
 	int goscie_score = 0;
 	int gospodarze_score = 0;
+	boolean edit_score = false;
 
     @FXML // ResourceBundle that was given to the FXMLLoader
     private ResourceBundle resources;
@@ -43,6 +44,8 @@ public class MainController {
     		gospodarze_point(null);
     	}else if(event.getCharacter().equals("h")) {
     		goscie_point(null);
+    	}else if(event.getCharacter().equals("e")) {
+    		edit(null);
     	}
     }
     
@@ -57,16 +60,35 @@ public class MainController {
     	System.exit(0);
     }
     @FXML
+    void edit(ActionEvent event) {
+    	if (edit_score == false) edit_score = true;
+		else edit_score = false;
+    }
+    @FXML
     void gospodarze_point(ActionEvent event) {
-    	//System.out.println("gg");
-    	gospodarze_score++;
-    	score.setText("Gospodarze " + gospodarze_score + ":" + goscie_score + " Goœcie");
+    	if(edit_score == false)
+    	{
+    		gospodarze_score++;
+    		score.setText("Gospodarze " + gospodarze_score + ":" + goscie_score + " Goœcie");
+    	}
+    	else
+    	{
+    		gospodarze_score--;
+    		score.setText("Gospodarze " + gospodarze_score + ":" + goscie_score + " Goœcie");
+    	}
     }
     @FXML
     void goscie_point(ActionEvent event) {
-    	//System.out.println("hh");
-    	goscie_score++;
-    	score.setText("Gospodarze " + gospodarze_score + ":" + goscie_score + " Goœcie");
+    	if(edit_score == false)
+    	{
+    		goscie_score++;
+    		score.setText("Gospodarze " + gospodarze_score + ":" + goscie_score + " Goœcie");
+    	}
+    	else
+    	{
+    		goscie_score--;
+    		score.setText("Gospodarze " + gospodarze_score + ":" + goscie_score + " Goœcie");
+    	}
     }
 
     @FXML // This method is called by the FXMLLoader when initialization is complete

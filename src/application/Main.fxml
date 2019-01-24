@@ -11,8 +11,9 @@
          <items>
             <Button mnemonicParsing="true" onAction="#next" text="_P &quot;Kolejna runda&quot;" BorderPane.alignment="CENTER" />
             <Button onAction="#exit" text="_W &quot; Koniec Gry" />
-            <Button mnemonicParsing="true" onAction="#gospodarze_point" text="_G &quot;Punkt dla Gospodarzy&quot;" BorderPane.alignment="CENTER" />
-            <Button mnemonicParsing="true" onAction="#goscie_point" text="_H &quot;Punkt dla Gości&quot;" BorderPane.alignment="CENTER" />
+            <Button mnemonicParsing="true" onAction="#gospodarze_point" text="_G &quot;Gospodarze&quot;" BorderPane.alignment="CENTER" />
+            <Button mnemonicParsing="true" onAction="#goscie_point" text="_H &quot;Goście&quot;" BorderPane.alignment="CENTER" />
+            <Button mnemonicParsing="true"  text="_E &quot;Edytuj&quot;" BorderPane.alignment="CENTER" />
          </items>
       </ToolBar>
    </bottom>
