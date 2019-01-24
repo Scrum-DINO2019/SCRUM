@@ -13,7 +13,7 @@
             <Button onAction="#exit" text="_W &quot; Koniec Gry" />
             <Button mnemonicParsing="true" onAction="#gospodarze_point" text="_G &quot;Gospodarze&quot;" BorderPane.alignment="CENTER" />
             <Button mnemonicParsing="true" onAction="#goscie_point" text="_H &quot;Goście&quot;" BorderPane.alignment="CENTER" />
-            <Button mnemonicParsing="true"  text="_E &quot;Edytuj&quot;" BorderPane.alignment="CENTER" />
+            <Button mnemonicParsing="true" onAction="#edit" text="_E &quot;Edytuj&quot;" BorderPane.alignment="CENTER" />
          </items>
       </ToolBar>
    </bottom>
